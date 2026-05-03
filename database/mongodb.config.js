@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const connectDB = async () => {
   try {
     await mongoose.connect(
-      process.env.MONGODB_URI || "mongodb://127.0.0.1:27017/clone",
+      process.env.MONGODB_URI || "mongodb://localhost:27017/trello",
     );
     console.log("✅ MongoDB Connected");
   } catch (err) {

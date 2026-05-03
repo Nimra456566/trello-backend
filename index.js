@@ -26,7 +26,7 @@ dotenv.config();
 const connectDB = require("./database/mongodb.config.js");
 connectDB();
 
-console.log("URI:", process.env.MONGO_URI);
+console.log("URI:", process.env.MONGODB_URI);
 
 const app = express();
 const PORT = 3000;
